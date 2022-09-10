@@ -1,0 +1,22 @@
+body {
+  background-color: $c-1;
+  font: {
+    family: 'Roboto' -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+      'Droid Sans', 'Helvetica Neue', sans-serif;
+    weight: normal;
+    style: normal;
+    display: normal;
+    size: 16px;
+  }
+  color: #1a1a1a;
+  line-height: 24px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  max-width: 1344px;
+  width: 100%;
+  padding-inline: 16px;
+  margin-inline: auto;
+}
