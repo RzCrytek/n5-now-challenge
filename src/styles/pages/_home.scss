@@ -1,0 +1,11 @@
+#home {
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  .title {
+    @extend %font-robotoC;
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+}

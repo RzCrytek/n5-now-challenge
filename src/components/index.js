@@ -1,2 +1,6 @@
+export * from './Button';
+export { default as Card } from './Card/Card';
+export * from './Card/card.styled';
+export { default as Loader } from './Loader';
 export { default as Footer } from './footer/Footer';
 export { default as Header } from './header/Header';

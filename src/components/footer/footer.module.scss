@@ -1,0 +1,10 @@
+@import './src/styles/_variables.scss';
+
+#footer {
+  background-color: $c-2;
+  font-size: 14px;
+  color: #888;
+  text-align: center;
+  height: 50px;
+  padding: 16px;
+}

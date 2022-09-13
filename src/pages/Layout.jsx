@@ -1,11 +1,13 @@
 import { Footer, Header } from '../components';
 
-const Layout = ({ pageId, children }) => {
+const Layout = ({ children, pageId, className = '' }) => {
   return (
     <div id="wrapper">
       <Header />
 
-      <main id={pageId}>{children}</main>
+      <main id={pageId} className={className}>
+        {children}
+      </main>
 
       <Footer />
     </div>
