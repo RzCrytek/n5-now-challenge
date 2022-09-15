@@ -1,8 +1,16 @@
 import { Link, NavLink } from 'react-router-dom';
 
+import { useTranslation } from 'react-i18next';
+
 import style from './header.module.scss';
 
 const Header = () => {
+  const [t, i18n] = useTranslation();
+
+  const handleChangeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
+
   return (
     <header id={style.header}>
       <div className={style.container}>
@@ -12,12 +20,22 @@ const Header = () => {
 
         <ul className={style.languages}>
           <li>
-            <a className={'style.active'} href="/es">
+            <button
+              type="button"
+              className={i18n.language === 'es' ? `${style.active}` : ''}
+              onClick={() => handleChangeLanguage('es')}
+            >
               ES
-            </a>
+            </button>
           </li>
           <li>
-            <a href="/es">EN</a>
+            <button
+              type="button"
+              className={i18n.language === 'en' ? `${style.active}` : ''}
+              onClick={() => handleChangeLanguage('en')}
+            >
+              EN
+            </button>
           </li>
         </ul>
       </div>
