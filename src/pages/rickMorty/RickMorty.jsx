@@ -1,13 +1,14 @@
 import { useTranslation } from 'react-i18next';
 
-import { useFetchData } from '../../hooks';
+import { useFetchData } from '@/hooks';
 
 import Layout from '../Layout';
-import { StyledLink } from '../../components';
+import { StyledLink } from '@/components';
 import CharacterRender from '../components/CharacterRender';
 
 const RickMortyPage = () => {
   const ApiRickMorty = import.meta.env.VITE_API_RICK_AND_MORTY;
+
   const { loader, data } = useFetchData(ApiRickMorty + '/character');
   const [t] = useTranslation();
 

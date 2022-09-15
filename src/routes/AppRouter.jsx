@@ -1,8 +1,8 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-import HomePage from '../pages/home/HomePage';
-import RickMortyPage from '../pages/rickMorty/RickMorty';
-import HarryPotterPage from '../pages/harryPotter/HarryPotter';
+import HomePage from '@/pages/home/HomePage';
+import RickMortyPage from '@/pages/rickMorty/RickMorty';
+import HarryPotterPage from '@/pages/harryPotter/HarryPotter';
 
 const AppRouter = () => {
   return (

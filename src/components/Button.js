@@ -1,8 +1,6 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-import '../styles/_variables.scss';
-
 export const Buttons = styled.div`
   button,
   a {

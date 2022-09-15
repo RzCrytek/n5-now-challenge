@@ -1,6 +1,6 @@
 import { CardInfo, CardName, CardPicture, CardSummary, CardWrapper } from './card.styled';
 
-import imgNoPhoto from '../../assets/images/no-photo.png';
+import imgNoPhoto from '@/assets/images/no-photo.png';
 
 const Card = ({ character }) => {
   return (

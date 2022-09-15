@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 
 import Layout from '../Layout';
-import { Buttons, StyledLink } from '../../components';
+import { Buttons, StyledLink } from '@/components';
 
 const HomePage = () => {
   const [t] = useTranslation();

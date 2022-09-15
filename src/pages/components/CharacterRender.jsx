@@ -1,4 +1,4 @@
-import { Card, Loader } from '../../components';
+import { Card, Loader } from '@/components';
 
 const CharacterRender = ({ loader, data }) => {
   return (
