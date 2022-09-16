@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import PropTypes from 'prop-types';
 
 import { CardInfo, CardName, CardPicture, CardSummary, CardWrapper } from './card.styled';
@@ -5,6 +6,8 @@ import { CardInfo, CardName, CardPicture, CardSummary, CardWrapper } from './car
 import imgNoPhoto from '@/assets/images/no-photo.png';
 
 const Card = ({ character }) => {
+  const [t] = useTranslation();
+
   return (
     <CardWrapper>
       <CardPicture>
@@ -15,14 +18,14 @@ const Card = ({ character }) => {
         <CardInfo>
           <p>
             <span>
-              <strong>Género: </strong>
+              <strong>{t('genero')}: </strong>
               {character.gender}
             </span>
 
             <span> | </span>
 
             <span>
-              <strong>Especie: </strong>
+              <strong>{t('especie')}: </strong>
               {character.species}
             </span>
           </p>
