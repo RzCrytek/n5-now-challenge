@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-import { Card, Loader } from '@/components';
+import { CharacterCard, Loader } from '@/components';
 
 const CharacterRender = ({ loader, data }) => {
   return (
@@ -9,7 +9,7 @@ const CharacterRender = ({ loader, data }) => {
 
       <div className="card-box">
         {data?.map((character, i) => (
-          <Card character={character} key={i} />
+          <CharacterCard character={character} key={i} />
         ))}
       </div>
     </>
