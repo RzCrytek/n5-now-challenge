@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import { CardInfo, CardName, CardPicture, CardSummary, CardWrapper } from './card.styled';
 
 import imgNoPhoto from '@/assets/images/no-photo.png';
@@ -28,6 +30,10 @@ const Card = ({ character }) => {
       </CardSummary>
     </CardWrapper>
   );
+};
+
+Card.propTypes = {
+  character: PropTypes.object.isRequired,
 };
 
 export default Card;

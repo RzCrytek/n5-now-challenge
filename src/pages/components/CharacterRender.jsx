@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import { Card, Loader } from '@/components';
 
 const CharacterRender = ({ loader, data }) => {
@@ -13,4 +15,10 @@ const CharacterRender = ({ loader, data }) => {
     </>
   );
 };
+
+CharacterRender.propTypes = {
+  loader: PropTypes.bool,
+  data: PropTypes.arrayOf(PropTypes.object).isRequired,
+};
+
 export default CharacterRender;

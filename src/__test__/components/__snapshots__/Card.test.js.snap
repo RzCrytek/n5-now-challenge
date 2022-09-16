@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`componente <Card> match con el snapshot 1`] = `
+<div>
+  <div
+    class="sc-bczRLJ kaHELt"
+  >
+    <picture
+      class="sc-gsnTZi cmTymU"
+    >
+      <img
+        alt=""
+        src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
+      />
+    </picture>
+    <div
+      class="sc-dkzDqf bBcZg"
+    >
+      <h2
+        class="sc-hKMtZM bxdDSM"
+      >
+        Rick Sanchez
+      </h2>
+      <div
+        class="sc-eCYdqJ hDIDHp"
+      >
+        <p>
+          <span>
+            <strong>
+              Género: 
+            </strong>
+            Male
+          </span>
+          <span>
+             | 
+          </span>
+          <span>
+            <strong>
+              Especie: 
+            </strong>
+            Human
+          </span>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;

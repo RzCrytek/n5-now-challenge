@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
 
 const useFetchData = (url) => {
   const initial = {
@@ -37,6 +38,10 @@ const useFetchData = (url) => {
   }, [url]);
 
   return state;
+};
+
+useFetchData.propTypes = {
+  url: PropTypes.string.isRequired,
 };
 
 export default useFetchData;

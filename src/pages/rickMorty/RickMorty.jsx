@@ -21,7 +21,7 @@ const RickMortyPage = () => {
 
         <h1>{t('lista de personajes de')} RICK AND MORTY</h1>
 
-        <CharacterRender loader={loader} data={data.results} />
+        <CharacterRender loader={loader} data={data.results || []} />
       </div>
     </Layout>
   );
