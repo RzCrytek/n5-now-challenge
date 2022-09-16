@@ -1,11 +1,11 @@
 import { useTranslation } from 'react-i18next';
 import PropTypes from 'prop-types';
 
-import { CardInfo, CardName, CardPicture, CardSummary, CardWrapper } from './card.styled';
+import { CardInfo, CardName, CardPicture, CardSummary, CardWrapper } from './CharacterCard.styled';
 
 import imgNoPhoto from '@/assets/images/no-photo.png';
 
-const Card = ({ character }) => {
+const CharacterCard = ({ character }) => {
   const [t] = useTranslation();
 
   return (
@@ -35,8 +35,8 @@ const Card = ({ character }) => {
   );
 };
 
-Card.propTypes = {
+CharacterCard.propTypes = {
   character: PropTypes.object.isRequired,
 };
 
-export default Card;
+export default CharacterCard;
